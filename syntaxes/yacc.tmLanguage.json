@@ -1,0 +1,103 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "YACC",
+	"patterns": [
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#configurations"
+		},
+		{
+			"include": "#inline"
+		},
+		{
+			"include": "#object"
+		},
+		{
+			"include": "#alternative"
+		},
+		{
+			"include": "#token"
+		},
+		{
+			"include": "#commentBlock"
+		},
+		{
+			"include": "#commentLine"
+		}
+	],
+	"repository": {
+		"sections": {
+			"patterns": [{
+				"name": "keyword.control.yacc",
+				"match": "%%"
+			}]
+		},
+		"configurations": {
+			"name": "entity.name.function.yacc",
+			"begin": "%[^{%].",
+			"end": "\n",
+			"contentName": "entity.name.function.yacc",
+			"patterns": [
+				{
+					"name": "entity.name.class.yacc",
+					"begin": "'",
+					"end": "'",
+					"contentName": "variable.language.yacc"
+				}
+			]
+		},
+		"inline": {
+			"name": "entity.name.function.yacc",
+			"begin": "%{",
+			"end": "%}",
+			"contentName": "entity.name.class.yacc",
+			"patterns": [
+				{
+					"name": "comment.block.yacc",
+					"begin": "\\/\\*[ |\t|\n]",
+					"end": "\\*\\/[ |\t|\n]",
+					"contentName": "comment.block.yacc"
+				},
+				{
+					"name": "comment.line",
+					"match": "\\/\\/[ |\t|\n].*\n"
+				}
+			]
+		},
+		"object": {
+			"patterns": [{
+				"name": "constant.character.yacc",
+				"match": "[^\\:]+\\:"
+			}]
+		},
+		"alternative": {
+			"patterns": [{
+				"name": "constant.character.yacc",
+				"match": "\\|"
+			}]
+		},
+		"token": {
+			"name": "entity.name.class.yacc",
+			"begin": "'",
+			"end": "'",
+			"contentName": "variable.language.yacc"
+		},
+		"commentBlock": {
+			"name": "comment.block.yacc",
+			"begin": "\\/\\*[ |\t|\n]",
+			"end": "\\*\\/[ |\t|\n]",
+			"contentName": "comment.block.yacc"
+		},
+		"commentLine": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "\\/\\/[ |\t|\n].*\n"
+				}
+			]
+		}
+	},
+	"scopeName": "source.yacc"
+}

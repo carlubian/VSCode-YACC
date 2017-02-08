@@ -1,0 +1,26 @@
+{
+    "name": "yacc",
+    "displayName": "YACC",
+    "description": "Provides support for YACC files within Visual Studio Code",
+    "version": "1.0.0",
+    "publisher": "carlubian",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "yacc",
+            "aliases": ["YACC", "yacc"],
+            "extensions": [".y"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "yacc",
+            "scopeName": "source.yacc",
+            "path": "./syntaxes/yacc.tmLanguage.json"
+        }]
+    }
+}
