@@ -15,6 +15,10 @@ There are two ways of using this extension:
 
 ## Release Notes
 
+### 1.1.0
+
+Support for actions.
+
 ### 1.0.0
 
 Initial release.
