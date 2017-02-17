@@ -94,7 +94,7 @@
 		"object": {
 			"patterns": [{
 				"name": "constant.character.yacc",
-				"match": "[^\\:]+\\:"
+				"match": "[a-zA-ZñÑ0-9]+\\:"
 			}]
 		},
 		"alternative": {

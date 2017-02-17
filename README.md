@@ -15,6 +15,10 @@ There are two ways of using this extension:
 
 ## Release Notes
 
+### 1.1.1
+
+Colons as Tokens no longer break coloring.
+
 ### 1.1.0
 
 Support for actions.
