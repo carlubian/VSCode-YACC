@@ -21,6 +21,9 @@
 			"include": "#alternative"
 		},
 		{
+			"include": "#semicolon"
+		},
+		{
 			"include": "#token"
 		},
 		{
@@ -72,12 +75,12 @@
 		"actions": {
 			"name": "constant.character.yylex",
 			"begin": "[ |\t]{",
-			"end": "}[ |\t|\n]",
+			"end": "}[ |\t]*\n",
 			"contentName": "entity.name.class.yylex",
 			"patterns": [
 				{
 					"name": "variable.language.yylex",
-					"match": "\\$[0-9\\$]"
+					"match": "\\$[0-9\\$]+"
 				},
 				{
 					"name": "comment.block.yylex",
@@ -88,6 +91,10 @@
 				{
 					"name": "comment.line",
 					"match": "\\/\\/[ |\t|\n].*\n"
+				},
+				{
+					"name": "variable.language.yacc",
+					"match": "true|false"
 				}
 			]
 		},
@@ -101,6 +108,12 @@
 			"patterns": [{
 				"name": "constant.character.yacc",
 				"match": "\\|"
+			}]
+		},
+		"semicolon": {
+			"patterns": [{
+				"name": "constant.character.yacc",
+				"match": ";"
 			}]
 		},
 		"token": {

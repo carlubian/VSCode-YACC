@@ -15,14 +15,14 @@ There are two ways of using this extension:
 
 ## Release Notes
 
-### 1.1.1
+### 1.2.0
+Coloring fixes, and support for $10 and above.
 
+### 1.1.1
 Colons as Tokens no longer break coloring.
 
 ### 1.1.0
-
 Support for actions.
 
 ### 1.0.0
-
 Initial release.

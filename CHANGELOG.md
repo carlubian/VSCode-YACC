@@ -3,6 +3,9 @@ All notable changes to the "yacc" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.2.0
+Coloring fixes, and support for $10 and above
+
 ## 1.1.1
 Colons as tokens no longer break coloring
 
