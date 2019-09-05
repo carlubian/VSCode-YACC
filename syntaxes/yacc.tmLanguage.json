@@ -31,6 +31,9 @@
 		},
 		{
 			"include": "#commentLine"
+		},
+		{
+			"include": "#precedence"
 		}
 	],
 	"repository": {
@@ -42,7 +45,7 @@
 		},
 		"configurations": {
 			"name": "entity.name.function.yacc",
-			"begin": "%[^{%].",
+			"begin": "%(left|right|nonassoc)",
 			"end": "\n",
 			"contentName": "entity.name.function.yacc",
 			"patterns": [
@@ -51,6 +54,10 @@
 					"begin": "'",
 					"end": "'",
 					"contentName": "variable.language.yacc"
+				},
+				{
+					"name": "variable.language.yacc",
+					"match": " [a-zA-ZñÑ]+"
 				}
 			]
 		},
@@ -133,6 +140,14 @@
 				{
 					"name": "comment.line",
 					"match": "\\/\\/[ |\t|\n].*\n"
+				}
+			]
+		},
+		"precedence": {
+			"patterns": [
+				{
+					"name": "entity.name.function.yacc",
+					"match": "%prec( )?(('[^'\n ]+)'|([a-zA-ZñÑ]+))"
 				}
 			]
 		}

@@ -19,6 +19,9 @@ There are two ways of using this extension:
 
 ## Release Notes
 
+### 1.3.0
+Support for precedence rules.
+
 ### 1.2.1
 Updated branding and marketplace page.
 

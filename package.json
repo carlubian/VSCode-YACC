@@ -2,7 +2,7 @@
     "name": "yacc",
     "displayName": "VSCode-YACC",
     "description": "Provides support for YACC files within Visual Studio Code",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "publisher": "carlubian",
     "icon": "images/icon-YACC.png",
     "homepage": "https://github.com/carlubian/VSCode-YACC",
@@ -18,7 +18,7 @@
         "vscode": "^1.5.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [{
