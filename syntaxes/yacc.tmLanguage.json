@@ -45,7 +45,7 @@
 		},
 		"configurations": {
 			"name": "entity.name.function.yacc",
-			"begin": "%(left|right|nonassoc)",
+			"begin": "%(left|right|nonassoc|<|>|binary|2|0|term|token)",
 			"end": "\n",
 			"contentName": "entity.name.function.yacc",
 			"patterns": [
@@ -80,20 +80,20 @@
 			]
 		},
 		"actions": {
-			"name": "constant.character.yylex",
-			"begin": "[ |\t]{",
+			"name": "constant.character.yacc",
+			"begin": "[ |\t](=)?{",
 			"end": "}[ |\t]*\n",
-			"contentName": "entity.name.class.yylex",
+			"contentName": "entity.name.class.yacc",
 			"patterns": [
 				{
-					"name": "variable.language.yylex",
+					"name": "variable.language.yacc",
 					"match": "\\$[0-9\\$]+"
 				},
 				{
-					"name": "comment.block.yylex",
+					"name": "comment.block.yacc",
 					"begin": "\\/\\*[ |\t|\n]",
 					"end": "\\*\\/[ |\t|\n]",
-					"contentName": "comment.block.yylex"
+					"contentName": "comment.block.yacc"
 				},
 				{
 					"name": "comment.line",
@@ -147,7 +147,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.function.yacc",
-					"match": "%prec( )?(('[^'\n ]+)'|([a-zA-ZñÑ]+))"
+					"match": "%(prec|=) (('[^'\n ]+)'|([a-zA-ZñÑ]+))"
 				}
 			]
 		}

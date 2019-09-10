@@ -1,7 +1,14 @@
 # Change Log
 All notable changes to the "yacc" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### 1.3.1
+Implement some obscure syntax elements, as well as minor fixes.
+
+### 1.3.0
+Support for precedence rules.
+
+### 1.2.1
+Updated branding and marketplace page.
 
 ## 1.2.0
 Coloring fixes, and support for $10 and above

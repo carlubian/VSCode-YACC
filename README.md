@@ -4,7 +4,9 @@
 
 ![VSCode-YACC](https://carlubian.azurewebsites.net/images/YACC.png?maxAge=2592000 "VSCode-YYLEX")
 
-Provides support for yacc files within VS Code.
+Provides support for yacc files within Visual Studio Code.
+
+![](images/code-YACC.png)
 
 ## Features
 
@@ -18,6 +20,9 @@ There are two ways of using this extension:
 * Download from the Visual Studio Marketplace, [here](https://marketplace.visualstudio.com/items?itemName=carlubian.yacc)
 
 ## Release Notes
+
+### 1.3.1
+Implement some obscure syntax elements, as well as minor fixes.
 
 ### 1.3.0
 Support for precedence rules.
